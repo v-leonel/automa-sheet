@@ -7,13 +7,13 @@ data = {
     'Multiplicador Imposto': [1.1, 1.5, 1.1, 1.3, 1.3, 1.3, 1.3],
 }
 
-df = pd.DataFrame(data)
+tabela = pd.DataFrame(data)
 
 produtos = 'Produtos.xlsx'
-df.to_excel(produtos, index=False)
+tabela.to_excel(produtos, index=False)
 
-df_lido = pd.read_excel(produtos)
+tabela_lido = pd.read_excel(produtos)
 
-print(df_lido)
+print(tabela_lido)
 
-# df = pd.read_excel("")
+tabela = pd.read_excel("")
